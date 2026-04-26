@@ -360,38 +360,29 @@
 
     .hero-scroll {
       position: absolute;
-      bottom: 2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
+      bottom: 2rem;
+      left: 0;
+      right: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.75rem;
+      justify-content: center;
+      gap: 0.5rem;
       cursor: pointer;
       animation: fadeUp 0.8s ease-out 0.6s both;
+      z-index: 10;
     }
 
     .hero-scroll:hover .scroll-arrow {
-      transform: translateY(4px);
+      transform: translateY(3px);
     }
 
     .scroll-arrow {
-      width: 24px;
-      height: 24px;
-      color: rgba(232,68,122,0.6);
+      color: rgba(232,68,122,0.7);
       transition: transform 0.3s ease, color 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
-    .scroll-arrow svg {
-      width: 24px;
-      height: 24px;
-      flex-shrink: 0;
-    }
-
-    .scroll-arrow:hover svg {
+    .scroll-arrow:hover {
       color: var(--pink);
     }
 
